@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  myweb-dev:
+    image: nginx:latest
+    container_name: myweb-dev
+    ports:
+      - "4040:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    networks:
+      - myapp-net
+ 
+
+networks:
+  myapp-net:
+    driver: bridge
