@@ -13,8 +13,8 @@ pipeline {
             steps {
                 script {
                     // Deploy the application using Docker Compose
-                    bat 'docker-compose down'  // Stop any running containers
-                    bat 'docker-compose up -d' // Start the application in detached mode
+                    sh 'docker-compose down'  // Stop any running containers
+                    sh 'docker-compose up -d' // Start the application in detached mode
                 }
             }
         }
