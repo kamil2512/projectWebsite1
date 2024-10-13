@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   myweb-dev:
     image: nginx:latest
